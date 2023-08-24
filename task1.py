@@ -1,4 +1,4 @@
-
+big_number = []
 
 for i in range(3):
 
@@ -11,19 +11,38 @@ for i in range(3):
         print('Numbers are equal')
 
     if first > second:
-        print('First number is greater than first number')
+        print('First number is greater than second number')
     elif first < second:
         print('Second number is greater than first number')
     else:
-         print('-')
+        None
+
+    if first < second or first == second:
+        print('Second number is greater than or equal to first number')
+    elif (first > second) or (first == second):
+        print('First number is greater than or equal to first number')
+    elif first < second or first != second:
+        print('Second number is greater than or not equal to first number')
+    elif first > second or first != second:
+        print('First number is greater than or not equal to first number')
+    else:
+        None
 
     if first >= 100 or second >= 100:
-        print('One of the number is big')
+        print('At least one of the number is big')
+    else:
+        print('Both numbers are not big')
+
+    if first >= 100 or second >= 100:
+        tempList = []
+        tempList = int(first)
+        tempList = int(second)     
+        big_number.append (tempList)
+        print('big_numbers is set to ', first >= 100 or second >= 100)
         print('')
     else:
-        print('The numbers is not big')
+        print('big_numbers is set to ', first >= 100 or second >= 100)
         print('')
-
 
 
 
